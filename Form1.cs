@@ -41,6 +41,7 @@ namespace FileCompare
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     txtLeftDir.Text = dlg.SelectedPath;
+                    PopulateListView(lvwLeftDir, dlg.SelectedPath);
                 }
             }
         }
